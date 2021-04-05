@@ -1,0 +1,33 @@
+.container {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    .swatch {
+        border: var(--border);
+        background-color: var(--swatch-color);
+
+        --size: 20px;
+        width: var(--size);
+        height: var(--size);
+        margin-right: calc(var(--size) / 2);
+    }
+
+    .label {
+        color: green;
+    }
+
+    .picker {
+        position: absolute;
+        top: 100%;
+
+        & > div {
+            position: relative;
+            z-index: 1;
+            background-color: lightcyan;
+            padding: 5%;
+            width: 100%;
+        }
+    }
+}
