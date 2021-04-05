@@ -1,0 +1,30 @@
+.container {
+    // border: 5px solid deepskyblue;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    .selectedColorWrapper {
+        // border: 3px solid red;
+        border: var(--border);
+        position: relative;
+
+        --size: 150px;
+        width: var(--size);
+        height: var(--size);
+
+        & > * {
+            border: 2px solid purple;
+            position: absolute !important;
+            width: 100%;
+            height: 100%;
+            // z-index: 1;
+        }
+
+        .selectedColor {
+            position: relative;
+
+            background-color: var(--selected-color);
+        }
+    }
+}
