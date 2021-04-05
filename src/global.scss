@@ -1,0 +1,19 @@
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    #root {
+        height: 100%;
+
+        --border: 1px solid #123;
+    }
+}
+
+.SliderPicker-component {
+    .PickerWrapper_container {
+        min-width: 20vw;
+    }
+}
