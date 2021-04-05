@@ -1,0 +1,10 @@
+.container {
+    .allPickers {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .picker {
+            border: var(--border);
+            padding: 2%;
+        }
+    }
+}
